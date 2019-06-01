@@ -19,7 +19,7 @@ module.exports = {
     }),
     new CleanWebpackPlugin(['dist']),
     new HtmlWebpackPlugin({
-      title: 'Triangle',
+      title: 'Age Calculator',
       template: './src/index.html',
       inject: 'body'
 
