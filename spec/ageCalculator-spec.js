@@ -12,8 +12,10 @@ describe('AgeCalculator', function() {
     let age = userInput.checkDate();
     expect(age - userInput).toEqual(userInput - age);
   });
-  // it('should correctly determine whether three lengths can be made into traingle', function(){
-  //   var notTriangle = new AgeCalculator(30,3,3);
-  //   expect (notTriangle.checkTriangle()).toEqual('invalid');
-  // });
+  it('should test the age in seconds', function(){
+    let userInput = new AgeCalculator('10-31-1988');
+    let date = new Date(userInput.date);
+    let currentDate = new Date();
+    expect(userInput.checkDate()).toEqual((currentDate.getTime() - date.getTime()) / 1000);
+  });
 });
