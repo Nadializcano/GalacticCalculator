@@ -18,4 +18,11 @@ describe('AgeCalculator', function() {
     let currentDate = new Date();
     expect(userInput.checkDate()).toEqual((currentDate.getTime() - date.getTime()) / 1000);
   });
+
+  it('should test that the program gets years', function(){
+    let userInput = new AgeCalculator('10-31-1988');
+    let age = userInput.checkDate();
+    expect(age - userInput).toEqual(userInput - age / 3.154e+7);
+  });
+
 });
