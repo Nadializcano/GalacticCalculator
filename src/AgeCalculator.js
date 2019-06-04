@@ -20,11 +20,11 @@ AgeCalculator.prototype.checkEarthYear = function(){
   return Math.floor(ageEarth / 31536000);
 };
 
-// AgeCalculator.prototype.checkMercuryYears = function(){
-//   let currentDate = new Date();
-//   let userInput = new Date(this.date);
-//   let mercuryYear = ((currentDate.getTime() - userInput.getTime()) / 1000);
-//   let newYearMercury = mercuryYear / 3.154e+7;
-//   return newYearMercury / .24;
+AgeCalculator.prototype.checkMercuryYears = function(){
+  let currentDate = new Date();
+  let userInput = new Date(this.date);
+  let ageEarth = Math.floor((currentDate.getTime() - userInput.getTime()) / 1000);
+  let newYearMercury = Math.floor(ageEarth / 31536000);
+  return Math.floor(newYearMercury / .24);
 
-//};
+};
