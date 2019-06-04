@@ -24,10 +24,10 @@ describe('AgeCalculator', function() {
     expect(userInput.checkEarthYear()).toEqual(30);
   });
 
-  // it('should test that the program returns years on mercury years', function(){
-  //   let userInput = new AgeCalculator('10-31-1988');
-  //
-  //   expect(userInput.checkMercuryYears()).toEqual(124);
-  //  });
+  it('should test that the program returns years on mercury years', function(){
+    let userInput = new AgeCalculator('10-31-1988');
+
+    expect(userInput.checkMercuryYears()).toEqual(125);
+   });
 
 });
