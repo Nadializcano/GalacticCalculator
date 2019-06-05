@@ -1,7 +1,8 @@
-export function AgeCalculator (date, age)
+export function AgeCalculator (date, age, life)
 {
   this.date = date;
   this.age = age;
+  this.life = life;
 
 }
 AgeCalculator.prototype.checkDate = function(){
@@ -50,4 +51,10 @@ AgeCalculator.prototype.checkJupiterYears = function(){
   let ageEarth = Math.floor((currentDate.getTime() - userInput.getTime()) / 1000);
   let newYearMercury = Math.floor(ageEarth / 31536000);
   return Math.floor(newYearMercury / 11.86);
+};
+
+AgeCalculator.prototype.lifeExpectancyMercury = function(){
+  let lifeExpected = Math.floor(this.life / .24);
+
+  return lifeExpected;
 };

@@ -30,4 +30,9 @@ describe('AgeCalculator', function() {
     expect(userInput.checkMercuryYears()).toEqual(125);
    });
 
+   it('should test the life expectancy in mercury', function(){
+     let userAge = new AgeCalculator('1988-10-31', 30, 96);
+
+     expect(userAge.lifeExpectancyMercury()).toEqual(400);
+    });
 });
