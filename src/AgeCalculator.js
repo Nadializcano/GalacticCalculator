@@ -58,3 +58,21 @@ AgeCalculator.prototype.lifeExpectancyMercury = function(){
 
   return lifeExpected;
 };
+
+AgeCalculator.prototype.lifeExpectancyVenus = function(){
+  let lifeExpected = Math.floor(this.life / .62);
+
+  return lifeExpected;
+};
+
+AgeCalculator.prototype.lifeExpectancyMars = function(){
+  let lifeExpected = Math.floor(this.life / 1.88);
+
+  return lifeExpected;
+};
+
+AgeCalculator.prototype.lifeExpectancyJupiter = function(){
+  let lifeExpected = Math.floor(this.life / 11.86);
+
+  return lifeExpected;
+};
