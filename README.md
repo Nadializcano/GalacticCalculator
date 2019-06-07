@@ -1,7 +1,5 @@
-# Triangle Checker
+# GalacticCalculator
 
-[![forthebadge](http://forthebadge.com/images/badges/made-with-javascript.svg)](http://forthebadge.com)
-[![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
 
 
 
@@ -14,7 +12,7 @@ To clone and run this application, you'll need [Git](https://git-scm.com) and [N
 $ git clone https://github.com/...
 
 # Go into the repository
-$ cd triangle-new
+$ cd GalacticCalculator
 
 # Install dependencies
 $ npm install
